@@ -1,0 +1,48 @@
+Testing binary_print 
+
+n = 1 Output: 1
+n = 4 Output: 100
+n = 31 Output: 11111
+
+Testing triangle 
+
+Calling triangle(3,5):
+
+***
+****
+*****
+****
+***
+
+
+Testing pow function 
+
+pow(-2,4) = 16
+pow(0,10) = 0
+pow(5,3) = 125
+
+Testing indented_sentences 
+
+Calling indented_sentences(1,6):
+
+This was written by calling number 1.
+  This was written by calling number 2.
+    This was written by calling number 3.
+      This was written by calling number 4.
+        This was written by calling number 5.
+          This was written by calling number 6.
+          This was ALSO written by calling number 6.
+        This was ALSO written by calling number 5.
+      This was ALSO written by calling number 4.
+    This was ALSO written by calling number 3.
+  This was ALSO written by calling number 2.
+This was ALSO written by calling number 1.
+
+Calling indented_sentences(3,5): 
+
+    This was written by calling number 3.
+      This was written by calling number 4.
+        This was written by calling number 5.
+        This was ALSO written by calling number 5.
+      This was ALSO written by calling number 4.
+    This was ALSO written by calling number 3.
