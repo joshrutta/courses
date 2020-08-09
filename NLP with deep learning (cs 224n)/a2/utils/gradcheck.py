@@ -17,6 +17,7 @@ def gradcheck_naive(f, x, gradientText):
     Note that gradient checking is a sanity test that only checks whether the
     gradient and loss values produced by your implementation are consistent with
     each other. Gradient check passing on its own doesn’t guarantee that you
+    
     have the correct gradients. It will pass, for example, if both the loss and
     gradient values produced by your implementation are 0s (as is the case when
     you have not implemented anything). Here is a detailed explanation of what
@@ -64,7 +65,7 @@ def grad_tests_softmax(skipgram, dummy_tokens, dummy_vectors, dataset):
     output_loss, output_gradCenterVecs, output_gradOutsideVectors = \
                 skipgram("c", 3, ["a", "b", "e", "d", "b", "c"],
                 dummy_tokens, dummy_vectors[:5,:], dummy_vectors[5:,:], dataset)
-
+    print('output_loss:',output_loss)
     assert np.allclose(output_loss, 11.16610900153398), \
            "Your loss does not match expected loss."
     expected_gradCenterVecs = [[ 0.,          0.,          0.        ],
